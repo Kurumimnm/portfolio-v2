@@ -1,0 +1,45 @@
+.mainView {
+    height: 700px;
+    padding-top: 250px;
+    margin-left: 50px;
+    padding-left: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nameEn {
+    font-size: 130px;
+    margin-top: 50px;
+    text-shadow: 0 0 0.1em white, 0 0 0.1em white, 0 0 0.1em white,
+        0 0 0.1em white, 0 0 0.1em white, 0 0 0.1em white;
+    color: black;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+.nameJp {
+    font-size: 140px;
+    text-shadow: 0 0 0.1em white, 0 0 0.1em white, 0 0 0.1em white,
+        0 0 0.1em white, 0 0 0.1em white, 0 0 0.1em white;
+    color: black;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+.backgroundBox {
+    position: absolute;
+    width: 100vw;
+    height: 700px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.square {
+    transform: rotate(170deg);
+    height: 70%;
+    width: 50%;
+    background-color: black;
+}
