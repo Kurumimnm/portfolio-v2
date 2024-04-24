@@ -1,0 +1,31 @@
+.header {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    // background-color: greenyellow;
+}
+
+.headerBox {
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #858585;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7px);
+    border-radius: 50px;
+}
+
+.nameTitle {
+    margin-left: 30px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hamburgerMenu {
+    font-size: 48px;
+    margin: auto 30px auto auto;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

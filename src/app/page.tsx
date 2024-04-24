@@ -1,11 +1,14 @@
+import Header from "@/components/Header";
+import MainView from "@/components/MainView";
+
 import styles from "./page.module.scss";
 
 export default function Home() {
     return (
         <>
-            <div className={styles.nameBox}>
-                <p className={styles.name}>Takahiro　Motosugi</p>
-            </div>
+            <Header />
+            <MainView />
+            <div style={{ height: "1000px" }}></div>
         </>
     );
 }
