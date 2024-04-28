@@ -1,0 +1,22 @@
+.profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .profileArea {
+        margin-top: 30px;
+        border: 5px solid black;
+        width: 120%;
+        p {
+            font-size: 32px;
+            color: black;
+            font-weight: 600;
+        }
+    }
+
+    .titleBox {
+        position: relative;
+        right: 50px;
+        bottom: 40px;
+    }
+}
