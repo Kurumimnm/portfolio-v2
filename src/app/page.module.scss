@@ -1,14 +1,11 @@
-.nameBox{
-    // border: 2px dotted;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+$color: #f2eee7;
+
+.top {
     height: 100vh;
+    background-color: $color;
 }
 
-.name {
-    // background-color: red;
-    font-size: 140px;
-    font-weight: bold;
-    text-align: center;
+.body {
+    padding: 30px;
+    background-color: $color;
 }

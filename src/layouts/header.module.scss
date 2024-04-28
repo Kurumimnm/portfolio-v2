@@ -1,33 +1,35 @@
+$color: #f2eee7;
+
 .header {
     width: 100vw;
     height: auto;
     position: fixed;
     z-index: 100;
-}
 
-.headerBox {
-    margin: 30px;
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid #858585;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(7px);
-    border-radius: 50px;
-}
+    .headerBox {
+        margin: 30px 100px 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #858585;
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(7px);
+        border-radius: 50px;
 
-.nameTitle {
-    margin-left: 30px;
-    font-size: 48px;
-    text-shadow: 0 0 0.1em white, 0 0 0.1em white, 0 0 0.1em white,
-        0 0 0.1em white, 0 0 0.1em white, 0 0 0.1em white;
-    text-align: center;
-}
+        .nameTitle {
+            margin-left: 30px;
+            font-size: 48px;
+            text-shadow: 0 0 0.1em $color, 0 0 0.1em $color, 0 0 0.1em $color,
+                0 0 0.1em $color, 0 0 0.1em $color, 0 0 0.1em $color;
+            text-align: center;
+        }
 
-.hamburgerMenu {
-    font-size: 48px;
-    margin: auto 30px auto auto;
+        .hamburgerMenu {
+            font-size: 48px;
+            margin: auto 30px auto auto;
 
-    &:hover {
-        cursor: pointer;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 }
