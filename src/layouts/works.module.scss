@@ -1,0 +1,58 @@
+.works {
+    // background-color: yellow;
+
+    .head {
+        display: flex;
+
+        .titleBox {
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .titleArea {
+            width: 100%;
+            // background-color: aquamarine;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            .items {
+                // background-color: red;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-around;
+
+                .title {
+                    font-size: 48px;
+                    font-weight: bold;
+                    // background-color: aqua;
+                }
+
+                ul {
+                    // background-color: greenyellow;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                    width: fit-content;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        font-size: 24px;
+                        font-weight: bold;
+                        margin: 10px 20px 10px 20px;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
