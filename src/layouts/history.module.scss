@@ -3,29 +3,34 @@
     // background-color: yellow;
     display: flex;
     // max-height: 562px;
-    overflow: hidden;
-
-    ul {
-        list-style: none;
-        height: 100%;
-        // background-color: aquamarine;
-        margin-left: 20px;
-        margin-bottom: 20px;
+    // overflow: hidden;
+    width: auto;
+    .titleBox {
+        position: relative;
     }
-    .period {
+
+    .eventBox {
+        display: flex;
+
+        ul {
+            list-style: none;
+            height: 100%;
+            // background-color: aquamarine;
+            margin-bottom: 20px;
+        }
         li {
             // background-color: lightcoral;
             padding: 30px;
-            font-size: 48px;
             font-weight: 600;
+            height: auto;
+            font-size: 2rem;
+            border: 1px solid black;
         }
-    }
-    .event {
-        li {
-            // background-color: bisque;
-            padding: 30px;
-            font-size: 48px;
-            font-weight: 500;
+        .award {
+            color: red;
+            font-weight: 600;
+            height: auto;
+            font-size: 2rem;
         }
     }
 }

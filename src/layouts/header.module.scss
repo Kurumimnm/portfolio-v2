@@ -1,5 +1,5 @@
 $color: #f2eee7;
-
+@import url("https://use.typekit.net/tij8goi.css");
 .header {
     width: 100vw;
     height: auto;
@@ -11,7 +11,7 @@ $color: #f2eee7;
         display: flex;
         justify-content: space-between;
         border: 2px solid #858585;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: #f2eee760;
         backdrop-filter: blur(7px);
         border-radius: 50px;
 
@@ -21,6 +21,9 @@ $color: #f2eee7;
             text-shadow: 0 0 0.1em $color, 0 0 0.1em $color, 0 0 0.1em $color,
                 0 0 0.1em $color, 0 0 0.1em $color, 0 0 0.1em $color;
             text-align: center;
+            font-family: "voluta-script-pro", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
         .hamburgerMenu {

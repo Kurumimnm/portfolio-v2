@@ -7,12 +7,14 @@ import Skills from "@/components/Skills";
 
 import styles from "./page.module.scss";
 import Footer from "@/components/Footer";
+import Lean from "@/components/Lean";
+import { Modal } from "@/components/Modal";
 
 export default function Home() {
     return (
         <>
             <div className={styles.top}>
-                <Header />
+                {/* <Header /> */}
                 <MainView />
             </div>
             <div className={styles.body}>
@@ -24,8 +26,9 @@ export default function Home() {
                 <div className={styles.boxGap}></div>
                 <Skills />
                 <div className={styles.boxGap}></div>
-                <Footer/>
-
+                <Lean />
+                <div className={styles.boxGap}></div>
+                <Footer />
                 {/* <div style={{ height: "1000px" }}></div> */}
             </div>
         </>

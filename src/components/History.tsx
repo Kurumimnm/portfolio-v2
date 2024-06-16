@@ -1,26 +1,63 @@
-import React from "react";
+"use client";
 
 import style from "@/layouts/history.module.scss";
 import title from "@/layouts/titleview.module.scss";
 
+import { useEffect, useState } from "react";
+import { client } from "@/libs/client";
+
 function History() {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+        async function fetchData() {
+            const res = await client.get({
+                endpoint: "history",
+                queries: { limit: 100, orders: "createdAt" },
+            });
+            setData(res.contents);
+        }
+        fetchData();
+    }, []);
+
     return (
         <div className={style.history}>
-            <div className={title.titleBox}>
-                <p className={title.title}>history</p>
+            <div className={style.titleBox}>
+                <div className={title.titleBox}>
+                    <p className={title.title}>History</p>
+                </div>
             </div>
-            <div className={style.period}>
+            <div className={style.eventBox}>
                 <ul>
-                    <li>2003年</li>
-                    <li>2022年</li>
-                    <li>2023年</li>
-                </ul>
-            </div>
-            <div className={style.event}>
-                <ul>
-                    <li>大阪生まれ</li>
-                    <li>ECCコンピュータ専門学校入学</li>
-                    <li>IoT部に入部</li>
+                    {data.map((item: any) => {
+                        return (
+                            <li key={item.id}>
+                                {item.year ? (
+                                    item.year
+                                ) : (
+                                    <>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;
+                                    </>
+                                )}
+                                {item.month.length <= 2 ? (
+                                    <>&nbsp;&nbsp;&emsp;</>
+                                ) : (
+                                    <>&emsp;</>
+                                )}
+                                {item.month}
+                                &emsp;
+                                {item.event}
+                                {item.award && (
+                                    <>
+                                        「
+                                        <span className={style.award}>
+                                            {item.award}
+                                        </span>
+                                        」
+                                    </>
+                                )}
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </div>

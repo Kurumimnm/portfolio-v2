@@ -45,6 +45,11 @@
                             cursor: pointer;
                         }
                     }
+
+                    .selected {
+                        border-bottom: 3px solid black;
+                        // color: red;
+                    }
                 }
             }
         }
@@ -53,6 +58,7 @@
     .body {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 2.5%;
+        // justify-content: space-between;
     }
 }

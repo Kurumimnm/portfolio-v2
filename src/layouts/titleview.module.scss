@@ -1,15 +1,22 @@
+@import url("https://use.typekit.net/tij8goi.css");
+
 .titleBox {
     border: 7px solid black;
     width: min-content;
     background-color: #f2eee7;
+    // background-color: black;
     z-index: 50;
     padding: 50px 0 50px 0;
 }
 
 .title {
+    // color: #f2eee7;
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 900;
     text-align: center;
     writing-mode: vertical-rl;
-    text-orientation: upright;
+    letter-spacing: 1.5rem;
+    font-family: "alumni-sans-collegiate-one", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }

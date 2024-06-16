@@ -5,25 +5,47 @@
     border: 3px solid black;
     width: 30%;
     background-color: #f2eee7;
+    // margin: 0 50px 0 0;
 
     .category {
-        background-color: lime;
         border: 1px solid gray;
         border-radius: 5px;
-        width: fit-content;
+        width: 50px;
+        text-align: center;
         padding: 3px 10px 3px 10px;
+    }
+    .colorWeb {
+        background-color: #6bff5e;
+    }
+    .colorApp {
+        background-color: #5ed8ff;
+    }
+    .colorIoT {
+        background-color: #ffb55e;
     }
 
     .card {
         .workTitle {
             font-size: 48px;
             text-align: center;
+            font-weight: bold;
         }
 
         .workImage {
             background-color: lightgray;
-            height: 300px;
+            height: 297px;
             margin: 10px;
+            border: 1px solid black;
+
+            .image {
+                height: 100%;
+                width: 100%;
+            }
+            &:hover {
+                cursor: pointer;
+                opacity: 0.5;
+                transition: 0.3s;
+            }
         }
 
         .explanation {

@@ -19,7 +19,7 @@ function AboutMe() {
             </div>
             <div className={s.titleBox}>
                 <div className={title.titleBox}>
-                    <p className={title.title}>about me</p>
+                    <p className={title.title}>About me</p>
                 </div>
             </div>
         </div>
